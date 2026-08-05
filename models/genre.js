@@ -10,4 +10,9 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: true
     },
-  
+    deskripsi: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    }
+    
+  }, 
