@@ -15,4 +15,9 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     }
     
-  }, 
+  }, {
+    tableName: "genre",
+    timestamps: true
+  });
+
+ 
