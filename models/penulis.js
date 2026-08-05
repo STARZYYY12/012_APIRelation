@@ -5,4 +5,8 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        
+        nama: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+       
