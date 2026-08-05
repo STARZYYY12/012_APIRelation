@@ -6,4 +6,8 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true
             
         },
+        judul: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
        
