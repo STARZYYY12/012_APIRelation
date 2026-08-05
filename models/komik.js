@@ -14,4 +14,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-       
+        tahun_terbit: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
