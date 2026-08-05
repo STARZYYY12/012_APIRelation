@@ -22,4 +22,18 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         }
-  
+    }, {
+        tableName: "komik",
+        timestamps: true
+    });
+    Komik.associate = (models) => {
+        Komik.belongsTo(models.Penulis, {
+          through: "komik_genre",
+          foreignKey: "komik_id",
+          otherKey: "genre_id",
+            as: "genre"
+        });
+      }
+
+    return Komik;
+};
