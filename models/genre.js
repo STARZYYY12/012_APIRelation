@@ -5,11 +5,4 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true
     },
-    genre: {
-      type: DataTypes.STRING,
-      allowNull: false
-    }
-  });
-
-  return Genre;
-};
+   
